@@ -58,7 +58,7 @@
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1rem;
+  --bs-body-font-size: 1.2rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
@@ -97,6 +97,7 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
+  line-height:1.7;
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
@@ -311,6 +312,7 @@ svg {
 table {
   caption-side: bottom;
   border-collapse: collapse;
+  font-size:1rem;
 }
 
 caption {
@@ -639,6 +641,8 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+  line-height:1.7;
+  text-align:justify;
 }
 
 @media (min-width: 576px) {
@@ -2063,7 +2067,10 @@ progress {
 .form-control:hover:not(:disabled):not([readonly])::file-selector-button {
   background-color: #dde0e3;
 }
-
+.hero-flag{
+    max-height:80px;
+}
+    
 .form-control-plaintext {
   display: block;
   width: 100%;
@@ -3617,11 +3624,14 @@ textarea.form-control-lg {
   margin-bottom: 0;
   list-style: none;
 }
-
+.littletext {
+  font-size: 1rem;
+}
 .nav-link {
   display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
   font-size: var(--bs-nav-link-font-size);
+  font-size: 1rem;
   font-weight: var(--bs-nav-link-font-weight);
   color: var(--bs-nav-link-color);
   text-decoration: none;
