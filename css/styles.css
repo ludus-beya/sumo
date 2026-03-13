@@ -5280,6 +5280,9 @@ textarea.form-control-lg {
     height:250px;
     object-fit:cover;
 }
+.hero{
+  letter-spacing: 0.15rem;
+}
 .modal-dialog {
   position: relative;
   width: auto;
